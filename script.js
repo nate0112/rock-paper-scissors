@@ -42,4 +42,17 @@ function playRound() {
     console.log(computerChoice);
 }
 
-playRound();
+function playGame(num) {
+
+    for (let i = 0; i < num; i++) {
+        playRound();
+    }
+
+    if (humanScore > computerScore) {
+        console.log("You win!");
+    } else {
+        console.log("You lose!");
+    }
+}
+
+playGame(5);
